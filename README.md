@@ -1,14 +1,21 @@
-         ___        ______     ____ _                 _  ___  
-        / \ \      / / ___|   / ___| | ___  _   _  __| |/ _ \ 
-       / _ \ \ /\ / /\___ \  | |   | |/ _ \| | | |/ _` | (_) |
-      / ___ \ V  V /  ___) | | |___| | (_) | |_| | (_| |\__, |
-     /_/   \_\_/\_/  |____/   \____|_|\___/ \__,_|\__,_|  /_/ 
- ----------------------------------------------------------------- 
+# Flask application Cook Book
 
+Application that allows users to store and easily access cooking recipes
 
-Hi there! Welcome to AWS Cloud9!
+## Functionalities
 
-To get started, create some files, play with the terminal,
-or visit https://docs.aws.amazon.com/console/cloud9/ for our documentation.
+- add new recipes to the site
+- edit and delete the recipes
+- search functionalities per keyword, country and category
 
-Happy coding!
+## Technology used
+- Front-end: html, css (Materialize framework), JavaScript and Jquery
+- Back-end: Python + Flask, MongoDB, deployed via Heroku
+
+## Database Schema
+MongoDB database with 4 collections:
+- recipes
+- ingredients
+- allergens
+- countries
+
