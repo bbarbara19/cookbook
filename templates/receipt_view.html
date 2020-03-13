@@ -1,12 +1,11 @@
 {% extends 'base.html' %} {% block content %}
 
-
     <ul>
         {% for receipt in receipts %}
         <li>
             <div class="row">
                 <div class="col s12">
-                    <i class="material-icons">receipt</i> {{receipts.receipt_name}} - {{receipts.receipt_name}} - {{receipts.preparation_time}} - {{receipts.date}}
+                    <i class="material-icons">receipt</i> {{receipt.receipt_name}} - {{receipt.preparation_time}} - {{receipt.date}}
                 </div>
             </div>
         </li>
