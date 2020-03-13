@@ -1,4 +1,4 @@
-# Flask application Cook Book
+# Cook Book Flask application
 
 Application that allows users to store and easily access cooking recipes
 
