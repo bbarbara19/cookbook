@@ -16,7 +16,7 @@ def get_receipts():
 
 @app.route('/add_receipt')
 def add_receipt():
-    return render_template('addreceipt.html',
+    return render_template('add_receipt.html',
                            categories=mongo.db.categories.find(),
                            allergens=mongo.db.allergens.find())
     

@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <!--Import Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css" />
+    <link rel="stylesheet" href="../static/css/style.css" type="text/css">
 </head>
 <body>
 <!------header-------->
@@ -33,7 +35,7 @@
 <!------/header-------->
 
 <!------central carousel-------->
-<section>
+<!-- <section>
   <div class="slider">
     <ul class="slides">
       <li>
@@ -52,7 +54,7 @@
       </li>
    </ul>
  </div>
-</section>
+</section> -->
 <!------/central carousel-------->
 
 <!------section search bar per keyword-------->  
@@ -74,10 +76,7 @@
 </section>
 <!------/section search bar per keyword-------->
 
-
-        {% block content %}
-        {% endblock %}  
-        
+{% block content %} {% endblock %}
         
 <!--Import jQuery-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

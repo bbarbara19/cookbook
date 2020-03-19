@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <!--Import Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/css/style.css" type="text/css">
 </head>
 <body>
 <!------header-------->
@@ -20,8 +21,8 @@
           <a href="#" class="brand-logo">Cook Book</a>
           <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
-              <li><a href="#">Add your receipt</a></li>
-              <li><a href="#">Receipts</a></li>
+              <li><a href="#">Add your recipe</a></li>
+              <li><a href="#">Recipe</a></li>
             </ul>
             <ul class="side-nav" id="mobile-demo">
               <li><a href="#">Add your receipt</a></li>
@@ -34,20 +35,20 @@
 
 <!------central section receipts summary-------->
 <section class="container">
-      <ul>
-        {% for receipt in receipts %}
-        <li>
-            <div class="row">
-                <div class="col s4"><i class="material-icons">receipt</i><strong>{{receipt.receipt_name}}</strong></div>
-                <div class="col s4">- {{receipt.country}} - </div>
-                <div class="col s4"><i class="material-icons">access_time</i>{{receipt.preparation_time}}</div>
-            </div>
-        </li>
-        {% endfor %}
-    </ul>  
-</section>
+  
+<h5>Welcome to your veg cookbook. Add your recipe and get inspired by the selection of vegetarian dishes</h5>
 <!------/central section-------->
 
+<div class="carousel">
+    <a class="carousel-item" href="#one!"><img src="../static/images/tiramisu.jpg"><h5>tiramisu</h5></a>
+    <a class="carousel-item" href="#two!"><img src="../static/images/crepes.jpg"><h5>crepes</h5></a>
+    <a class="carousel-item" href="#three!"><img src="../static/images/limeBasilJuice.jpg"><h5>Lime Juice</h5></a>
+    <a class="carousel-item" href="#four!"><img src="../static/images/mintsalad.jpg"><h5>Mint Salad</h5></a>
+    <a class="carousel-item" href="#five!"><img src="../static/images/avocadotoast.jpg"><h5>Avocado toast</h5></a>
+    <a class="carousel-item" href="#five!"><img src="../static/images/vegancupcakes.jpg"><h5>Avocado toast</h5></a>
+  </div>
+  
+</section>
 
 <!--Import jQuery-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -62,8 +63,7 @@
       $('.collapsible').collapsible();
       $(".dropdown-button").dropdown();
       $(".button-collapse").sideNav();
-      $('.carousel.carousel-slider').carousel({fullWidth: true});
-      $('.slider').slider();
+      $('.carousel').carousel();
       $('select').material_select();
       $('.datepicker').pickadate({
             selectMonths: true, // Creates a dropdown to control month

@@ -1,0 +1,17 @@
+
+
+
+
+.body{
+    color:#333;
+    letter-spacing: .2px;
+    font-size: 20px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+
+.carousel .carousel-item h5 {
+    text-align: center;
+    font-variant: small-caps;
+    color: turquoise;
+}

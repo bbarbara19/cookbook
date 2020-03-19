@@ -41,7 +41,7 @@
                     <div class="input-field col s6">
                         <i class="material-icons prefix">receipt</i>
                         <input id="receipt_name" name="receipt_name" type="text">
-                        <label for="icon_prefix">Receipt title</label>
+                        <label for="icon_prefix">Recipe title</label>
                     </div>
                     <div class="input-field col s6">
                         <i class="material-icons prefix">poll</i>
@@ -67,22 +67,24 @@
                     </div>
             </div>
             <div class="row">
-                    <div class="input-field col s6">
+                    <div class="input-field col s12">
                         <i class="material-icons prefix">person</i>
                         <input id="author" name="author" type="text">
                         <label for="icon_prefix">author name</label>
                     </div>
-                    <div class="input-field col s6">
-                        <i class="material-icons prefix">today</i>
-                        <input id="date" name="date" type="text" class="datepicker">
-                        <label for="icon_prefix">Date</label>
+            </div>
+            <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">flag</i>
+                        <input id="country" name="country" type="text">
+                        <label for="icon_prefix">country</label>
                     </div>
             </div>
              <div class="row">
                 <div class="input-field col s12">
                     <i class="material-icons prefix">subject</i>
-                    <textarea name="task_description" id="task_description" class="materialize-textarea"></textarea>
-                    <label for="icon_telephone">Receipt Description</label>
+                    <textarea name="description" id="description" class="materialize-textarea"></textarea>
+                    <label for="icon_telephone">Recipe Description</label>
                 </div>
             </div>
             <div class="row">
@@ -101,6 +103,17 @@
                       <span class="lever"></span>
                       Is Gluten Free
                     </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="file-field input-field">
+                    <div class="btn">
+                       <span>File</span>
+                       <input type="file">
+                    </div>
+                    <div class="file-path-wrapper">
+                       <input class="file-path validate" type="text">
+                    </div>
                 </div>
             </div>
             <div class="row">
