@@ -1,11 +1,14 @@
 import os
 from flask import Flask, render_template, redirect, request, url_for
 from flask_pymongo import PyMongo
-from bson.objectid import ObjectId 
+from bson.objectid import ObjectId
+
+# comment this line for production
+import env
 
 app = Flask(__name__)
 app.config["MONGO_DBNAME"] = 'receipt_book'
-app.config["MONGO_URI"] = 'mongodb+srv://mongouser:bbmongo20@myfirstcluster-km3xj.mongodb.net/receipt_book?retryWrites=true&w=majority'
+app.config["MONGO_URI"] = os.environ.get('MONGODB_URI')
 mongo = PyMongo(app)
 
 

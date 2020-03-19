@@ -1,4 +1,4 @@
-# Flask application Cook Book
+# Cook Book Flask application
 
 Application that allows users to store and easily access cooking recipes
 
@@ -8,14 +8,4 @@ Application that allows users to store and easily access cooking recipes
 - edit and delete the recipes
 - search functionalities per keyword, country and category
 
-## Technology used
-- Front-end: html, css (Materialize framework), JavaScript and Jquery
-- Back-end: Python + Flask, MongoDB, deployed via Heroku
-
-## Database Schema
-MongoDB database with 4 collections:
-- recipes
-- ingredients
-- allergens
-- countries
 
